@@ -6,52 +6,67 @@
     <title>webalex</title>
     <!--link css-->
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JavaScript (para funcionalidad de menús y otros elementos interactivos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
+
 <body>
 
-
     <header>
-        
-        <img src="../img/logomuestra.jpg" alt="Logo">
         <!--Menú páginas-->
-        <nav>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="nosotros.html">nosotros</a></li>
-                <li><a href="servicios.html">servicios</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="blog.html">blog</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-            </ul>
-        </nav>
+        <img class="img" src="../img/logomuestra.jpg" alt="Logo vectorizado de la empresa">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../../index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="../pages/nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../pages/servicios.html">Servicios</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../pages/portfolio.html">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../pages/blog.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+
         <!--Redes, tambien para footer-->
         <ul class="redes-sociales">
             <li><a href="https://www.instagram.com/">instagram</a></li>
             <li><a href="https://www.youtube.com/">youtube</a></li>
             <li><a href="https://www.whatsapp.com/?lang=es_LA">whatsapp</a></li>
-        </ul>        
+        </ul>
     </header>
 
 
 
+
     <main>
-        <h1>Contacto</h1>
-        <p>Dejanos tus consultas y nos contactaremos </p>
-        <section id="contacto">
-            <h2>Envíanos un mensaje</h2>
-            <form action="https://formspree.io/f/hora.rosciani@gmail.com" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-                <button type="submit">Enviar</button>
+        <div class="container mt-5">
+            <h2>Contacto</h2>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Tu Nombre">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="tuemail@example.com">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mensaje</label>
+                    <textarea class="form-control" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
-        </section>
+        </div>    
     </main>
 
 
