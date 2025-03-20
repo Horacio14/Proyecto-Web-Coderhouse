@@ -4,47 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webalex</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--link css-->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap JavaScript (para funcionalidad de menús y otros elementos interactivos) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 
 <body>
-
-
-    <header>
-        <!--Menú páginas-->
-        <img class="img" src="assets/img/logomuestra.jpg" alt="Logo vectorizado de la empresa">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Home</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item"><a class="nav-link" href="assets/pages/nosotros.html">Nosotros</a></li>
-                  <li class="nav-item"><a class="nav-link" href="assets/pages/servicios.html">Servicios</a></li>
-                  <li class="nav-item"><a class="nav-link" href="assets/pages/contacto.html">Contacto</a></li>
-                  <li class="nav-item"><a class="nav-link" href="assets/pages/portfolio.html">Portfolio</a></li>
-                  <li class="nav-item"><a class="nav-link" href="assets/pages/blog.html">Blog</a></li>
-                </ul>
-              </div>
+    <header class="bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+            <div class="container">
+                <!-- Logo a la izquierda -->
+                <a href="index.html" class="navbar-brand">
+                    <img class="img-fluid" src="assets/img/logomuestra.jpg" alt="Logo vectorizado de la empresa" style="height: 50px;">
+                </a>
+                
+                <!-- Botón de menú hamburguesa en dispositivos pequeños -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menú de navegación centrado -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="assets/pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="assets/pages/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="assets/pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="assets/pages/portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="assets/pages/blog.html">Blog</a></li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-          
-
-        <!--Redes, tambien para footer-->
-        <ul class="redes-sociales">
-            <li><a href="https://www.instagram.com/">instagram</a></li>
-            <li><a href="https://www.youtube.com/">youtube</a></li>
-            <li><a href="https://www.whatsapp.com/?lang=es_LA">whatsapp</a></li>
-        </ul>
+        </nav>
     </header>
+    
+    
 
 
 
@@ -56,22 +53,22 @@
         </div>
         
         <section>
-            <video class="video" src="assets/Video/Muelle.mp4" controls>video1</video>
-            <img class="img" src="assets/img/fotomuestra.jpg" alt="Ejemplo de nuestro trabajo">
+            <video class="video" src="assets/Video/Muelle.mp4" loop autoplay muted playsinline>video1</video>
+            <img class="img" src="assets/img/fotomuestra.jpg" alt="Fiesta de casamiento">
         </section>
 
 
     </main>
 
-
-
-    <footer class="footer">
-        <ul class="redes-sociales">
-            <li><a href="https://www.instagram.com/" target="_blank">instagram</a></li>
-            <li><a href="https://www.youtube.com/" target="_blank">youtube</a></li>
-            <li><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">whatsapp</a></li>
-        </ul>
-    </footer>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <ul class="list-unstyled d-flex justify-content-center gap-3">
+                <li><a href="https://www.instagram.com/" target="_blank" class="text-white">Instagram</a></li>
+                <li><a href="https://www.youtube.com/" target="_blank" class="text-white">YouTube</a></li>
+                <li><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="text-white">WhatsApp</a></li>
+            </ul>
+        </div>
+    </footer>    
 
 </body>
 </html>
